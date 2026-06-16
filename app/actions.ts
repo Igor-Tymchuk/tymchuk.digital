@@ -2,9 +2,6 @@
 
 type Result = { ok: boolean; error?: string };
 
-import dotenv from "dotenv";
-dotenv.config();
-
 export async function sendContact(
   _prev: Result | null,
   formData: FormData,
