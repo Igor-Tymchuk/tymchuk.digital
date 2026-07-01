@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import { LanguageProvider } from "@/components/language-provider";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -53,7 +54,22 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${sora.variable}`}
     >
       <body className="font-sans antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9S6HQG2BFM"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9S6HQG2BFM');
+      `}
+        </Script>
+
         <LanguageProvider>{children}</LanguageProvider>
+
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
