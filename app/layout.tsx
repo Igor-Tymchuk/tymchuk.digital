@@ -18,27 +18,40 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tymchuk-digital.com"),
+
   alternates: {
     canonical: "/",
   },
+
   title: "TYMCHUK.DIGITAL — Digital Agency for Web, Branding & Growth",
+
   description:
-    "Premium digital agency crafting landing pages, web apps, branding, print design, Google Ads and interactive gift-surprise websites. Modern, fast and unforgettable.",
-  generator: "TYMCHUK",
-  keywords: [
-    "digital agency",
-    "landing pages",
-    "web apps",
-    "branding",
-    "google ads",
-    "web design",
-  ],
-  icons: {
-    icon: "/favicon.svg",
+    "Premium digital agency crafting landing pages, web apps, branding, print design, Google Ads and interactive gift-surprise websites.",
+
+  openGraph: {
+    title: "TYMCHUK.DIGITAL",
+    description:
+      "Premium digital agency crafting landing pages, web apps, branding, print design, Google Ads and interactive gift-surprise websites.",
+    url: "https://tymchuk-digital.com",
+    siteName: "TYMCHUK.DIGITAL",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "TYMCHUK.DIGITAL",
+      },
+    ],
   },
 
-  verification: {
-    google: "19o2OlRrK2uWMquOD8I0fhxTcvP_SPj_oX_eiOR6YLA",
+  twitter: {
+    card: "summary_large_image",
+    title: "TYMCHUK.DIGITAL",
+    description:
+      "Premium digital agency crafting landing pages, web apps, branding and digital solutions.",
+    images: ["/og-image.jpg"],
   },
 };
 
