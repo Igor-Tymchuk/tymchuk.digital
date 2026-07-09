@@ -17,10 +17,14 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tymchuk-digital.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "TYMCHUK.DIGITAL — Digital Agency for Web, Branding & Growth",
   description:
     "Premium digital agency crafting landing pages, web apps, branding, print design, Google Ads and interactive gift-surprise websites. Modern, fast and unforgettable.",
-  generator: "v0.app",
+  generator: "TYMCHUK",
   keywords: [
     "digital agency",
     "landing pages",
