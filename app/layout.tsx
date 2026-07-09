@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   title: "TYMCHUK.DIGITAL — Digital Agency for Web, Branding & Growth",
 
   description:
-    "Premium digital agency crafting landing pages, web apps, branding, print design, Google Ads and interactive gift-surprise websites.",
+    "Digital agency crafting landing pages, web apps, branding, print design, Google Ads and interactive gift-surprise websites.",
 
   openGraph: {
     title: "TYMCHUK.DIGITAL",
     description:
-      "Premium digital agency crafting landing pages, web apps, branding, print design, Google Ads and interactive gift-surprise websites.",
+      "Digital agency crafting landing pages, web apps, branding, print design, Google Ads and interactive gift-surprise websites.",
     url: "https://tymchuk-digital.com",
     siteName: "TYMCHUK.DIGITAL",
     locale: "en_US",
@@ -50,8 +50,16 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TYMCHUK.DIGITAL",
     description:
-      "Premium digital agency crafting landing pages, web apps, branding and digital solutions.",
+      "Digital agency crafting landing pages, web apps, branding and digital solutions.",
     images: ["/og-image.jpg"],
+  },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
+    ],
   },
 };
 
