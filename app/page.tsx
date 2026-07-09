@@ -29,8 +29,8 @@ export default function Page() {
       <SectionDivider />
       <Pricing />
       <SectionDivider />
-      <Reviews />
-      <SectionDivider />
+      {/* <Reviews />
+      <SectionDivider /> */}
       <Faq />
       <SectionDivider />
       <Contact />

@@ -217,7 +217,7 @@ export const translations: Record<Lang, Dict> = {
       plans: [
         {
           name: "Starter",
-          price: "$490",
+          price: "$300",
           desc: "Perfect for a sleek landing page.",
           features: [
             "1 landing page",
@@ -228,7 +228,7 @@ export const translations: Record<Lang, Dict> = {
         },
         {
           name: "Growth",
-          price: "$1,490",
+          price: "$1,000",
           desc: "For brands ready to scale.",
           features: [
             "Multi-page site or web app",
@@ -460,7 +460,7 @@ export const translations: Record<Lang, Dict> = {
       plans: [
         {
           name: "Старт",
-          price: "$490",
+          price: "$300",
           desc: "Ідеально для стильного лендінгу.",
           features: [
             "1 лендінг",
@@ -471,7 +471,7 @@ export const translations: Record<Lang, Dict> = {
         },
         {
           name: "Зростання",
-          price: "$1,490",
+          price: "$1,000",
           desc: "Для брендів, готових масштабуватись.",
           features: [
             "Багатосторінковий сайт чи застосунок",
@@ -699,7 +699,7 @@ export const translations: Record<Lang, Dict> = {
       plans: [
         {
           name: "Start",
-          price: "$490",
+          price: "$300",
           desc: "Idealny na elegancki landing page.",
           features: [
             "1 landing page",
@@ -710,7 +710,7 @@ export const translations: Record<Lang, Dict> = {
         },
         {
           name: "Wzrost",
-          price: "$1,490",
+          price: "$1,000",
           desc: "Dla marek gotowych się skalować.",
           features: [
             "Strona wielostronicowa lub aplikacja",
