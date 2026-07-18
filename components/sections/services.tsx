@@ -13,7 +13,7 @@ import { useLanguage } from "@/components/language-provider";
 import { RevealGroup, RevealItem } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 
-const icons = [Layout, Code2, PenTool, Printer, Megaphone, Gift];
+const icons = [Layout, Code2, PenTool, /*Printer,*/ Megaphone, Gift];
 
 export function Services() {
   const { t } = useLanguage();

@@ -110,10 +110,10 @@ export const translations: Record<Lang, Dict> = {
       ctaPrimary: "Start a project",
       ctaSecondary: "View our work",
       stats: [
-        { value: "120+", label: "Projects shipped" },
-        { value: "40+", label: "Happy clients" },
+        { value: "40+", label: "Projects shipped" },
+        // { value: "40+", label: "Happy clients" },
         { value: "7d", label: "Avg. launch time" },
-        { value: "4.9", label: "Client rating" },
+        { value: "4.7", label: "Client rating" },
       ],
     },
     features: {
@@ -157,11 +157,11 @@ export const translations: Record<Lang, Dict> = {
           desc: "Logos, systems and brand guidelines that resonate.",
           tag: "Brand",
         },
-        {
-          title: "Print Design",
-          desc: "Business cards, posters and packaging that pop.",
-          tag: "Print",
-        },
+        // {
+        //   title: "Print Design",
+        //   desc: "Business cards, posters and packaging that pop.",
+        //   tag: "Print",
+        // },
         {
           title: "Google Ads",
           desc: "Performance campaigns that maximize every dollar.",
@@ -314,7 +314,7 @@ export const translations: Record<Lang, Dict> = {
         "Landing Page",
         "Web App",
         "Branding",
-        "Print Design",
+        // "Print Design",
         "Google Ads",
         "Gift Surprise Site",
         "Other",
@@ -356,10 +356,10 @@ export const translations: Record<Lang, Dict> = {
       ctaPrimary: "Почати проєкт",
       ctaSecondary: "Наші роботи",
       stats: [
-        { value: "120+", label: "Реалізованих проєктів" },
-        { value: "40+", label: "Задоволених клієнтів" },
+        { value: "40+", label: "Реалізованих проєктів" },
+        // { value: "40+", label: "Задоволених клієнтів" },
         { value: "7д", label: "Сер. час запуску" },
-        { value: "4.9", label: "Рейтинг клієнтів" },
+        { value: "4.7", label: "Рейтинг клієнтів" },
       ],
     },
     features: {
@@ -403,11 +403,11 @@ export const translations: Record<Lang, Dict> = {
           desc: "Логотипи, системи та гайдлайни, що запамʼятовуються.",
           tag: "Бренд",
         },
-        {
-          title: "Поліграфія",
-          desc: "Візитки, постери та упаковка, що вражають.",
-          tag: "Друк",
-        },
+        // {
+        //   title: "Поліграфія",
+        //   desc: "Візитки, постери та упаковка, що вражають.",
+        //   tag: "Друк",
+        // },
         {
           title: "Google Ads",
           desc: "Кампанії, що максимізують кожну гривню.",
@@ -554,7 +554,7 @@ export const translations: Record<Lang, Dict> = {
         "Лендінг",
         "Вебзастосунок",
         "Брендинг",
-        "Поліграфія",
+        // "Поліграфія",
         "Google Ads",
         "Сайт-сюрприз",
         "Інше",
@@ -598,10 +598,10 @@ export const translations: Record<Lang, Dict> = {
       ctaPrimary: "Rozpocznij projekt",
       ctaSecondary: "Nasze realizacje",
       stats: [
-        { value: "120+", label: "Zrealizowanych projektów" },
-        { value: "40+", label: "Zadowolonych klientów" },
+        { value: "40+", label: "Zrealizowanych projektów" },
+        // { value: "40+", label: "Zadowolonych klientów" },
         { value: "7d", label: "Śr. czas startu" },
-        { value: "4.9", label: "Ocena klientów" },
+        { value: "4.7", label: "Ocena klientów" },
       ],
     },
     features: {
@@ -642,11 +642,11 @@ export const translations: Record<Lang, Dict> = {
           desc: "Logo, systemy i wytyczne marki, które zapadają w pamięć.",
           tag: "Marka",
         },
-        {
-          title: "Druk",
-          desc: "Wizytówki, plakaty i opakowania, które przyciągają wzrok.",
-          tag: "Druk",
-        },
+        // {
+        //   title: "Druk",
+        //   desc: "Wizytówki, plakaty i opakowania, które przyciągają wzrok.",
+        //   tag: "Druk",
+        // },
         {
           title: "Google Ads",
           desc: "Kampanie maksymalizujące każdą złotówkę.",
@@ -793,7 +793,7 @@ export const translations: Record<Lang, Dict> = {
         "Landing Page",
         "Aplikacja web",
         "Branding",
-        "Druk",
+        // "Druk",
         "Google Ads",
         "Strona-niespodzianka",
         "Inne",

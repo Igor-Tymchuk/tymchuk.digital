@@ -211,7 +211,7 @@ export function Contact() {
         transition-transform group-hover:scale-105
       "
                     >
-                      📎
+                      <img src={"./MaterialSymbolsAttachFileAdd.svg"} />
                     </div>
 
                     <div className="space-y-1">

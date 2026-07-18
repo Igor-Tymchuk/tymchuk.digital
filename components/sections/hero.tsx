@@ -92,7 +92,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.55 }}
-          className="mx-auto mt-9 grid max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border glass md:grid-cols-4"
+          className="mx-auto mt-9 grid max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border glass md:grid-cols-3"
         >
           {t.hero.stats.map((s) => (
             <div key={s.label} className="bg-card/40 px-4 py-6 text-center">
