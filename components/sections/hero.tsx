@@ -49,7 +49,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -18, filter: "blur(8px)" }}
                 transition={{ duration: 0.45 }}
-                className="text-gradient text-glow inline-block"
+                className="text-gradient text-glow inline-block h-11 sm:h-17 md:h-20"
               >
                 {words[idx]}
               </motion.span>
@@ -92,7 +92,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.55 }}
-          className="mx-auto mt-9 grid max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border glass md:grid-cols-3"
+          className="mx-auto mt-9 grid max-w-3xl grid-cols-3 gap-px overflow-hidden rounded-2xl border border-border glass md:grid-cols-3"
         >
           {t.hero.stats.map((s) => (
             <div key={s.label} className="bg-card/40 px-4 py-6 text-center">
@@ -107,7 +107,7 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-background to-transparent" />
     </section>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MessageCircle, Send } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Send } from "lucide-react";
 import { useLanguage } from "@/components/language-provider";
 
 export function SiteFooter() {
@@ -11,7 +11,7 @@ export function SiteFooter() {
     { href: "#work", label: t.nav.work },
     { href: "#process", label: t.nav.process },
     { href: "#pricing", label: t.nav.pricing },
-    { href: "#reviews", label: t.nav.reviews },
+    // { href: "#reviews", label: t.nav.reviews },
   ];
 
   return (
@@ -65,6 +65,15 @@ export function SiteFooter() {
             >
               <Mail className="h-4 w-4 text-primary" />
               tymchuk.developer@gmail.com
+            </a>
+            <a
+              href="https://www.google.com/maps/@51.3994172,16.1939417,13z?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-foreground/80 transition-colors hover:text-primary"
+            >
+              <MapPin className="h-4 w-4 text-primary" />
+              {t.footer.address}
             </a>
             <div className="mt-1 flex gap-2.5">
               <a

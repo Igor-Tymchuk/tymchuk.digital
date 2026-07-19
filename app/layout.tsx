@@ -17,6 +17,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tymchuk-digital.com"),
   alternates: {
     canonical: "/",
   },

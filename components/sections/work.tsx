@@ -1,22 +1,22 @@
-'use client'
+"use client";
 
-import { ArrowUpRight } from 'lucide-react'
-import Image from 'next/image'
-import { useLanguage } from '@/components/language-provider'
-import { RevealGroup, RevealItem } from '@/components/reveal'
-import { SectionHeading } from '@/components/section-heading'
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import { useLanguage } from "@/components/language-provider";
+import { RevealGroup, RevealItem } from "@/components/reveal";
+import { SectionHeading } from "@/components/section-heading";
 
 const images = [
-  '/work/nova-fintech.png',
-  '/work/bloom-studio.png',
-  '/work/pulse-fitness.png',
-  '/work/aurora-gift.png',
-  '/work/vertex-labs.png',
-  '/work/lumen-ads.png',
-]
+  "./love-story.jpg",
+  "./beauty.jpg",
+  "./portfolio.jpg",
+  "./lega-office.jpg",
+  // "/work/vertex-labs.png",
+  // "/work/lumen-ads.png",
+];
 
 export function Work() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   return (
     <section id="work" className="relative px-6 py-24">
@@ -27,16 +27,18 @@ export function Work() {
           subtitle={t.work.subtitle}
         />
 
-        <RevealGroup className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2">
           {t.work.items.map((item, i) => (
             <RevealItem key={item.title}>
               <a
-                href="#contact"
+                href={item.link || "#contact"}
                 className="card-hover group relative block overflow-hidden rounded-2xl border border-border bg-card/50"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={images[i] || '/placeholder.svg'}
+                    src={images[i] || "/placeholder.svg"}
                     alt={`${item.title} — ${item.cat}`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -46,7 +48,9 @@ export function Work() {
                 </div>
                 <div className="flex items-center justify-between p-5">
                   <div>
-                    <h3 className="font-heading text-lg font-semibold">{item.title}</h3>
+                    <h3 className="font-heading text-lg font-semibold">
+                      {item.title}
+                    </h3>
                     <p className="text-sm text-primary">{item.cat}</p>
                   </div>
                   <span className="grid h-10 w-10 place-items-center rounded-full border border-border bg-secondary/60 text-primary transition-all group-hover:glow-border group-hover:bg-primary group-hover:text-primary-foreground">
@@ -59,5 +63,5 @@ export function Work() {
         </RevealGroup>
       </div>
     </section>
-  )
+  );
 }

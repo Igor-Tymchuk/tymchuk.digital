@@ -64,7 +64,7 @@ export function Pricing() {
                       </li>
                     ))}
                   </ul>
-
+                  {/* 
                   <a
                     href="#contact"
                     className={cn(
@@ -75,7 +75,7 @@ export function Pricing() {
                     )}
                   >
                     {t.pricing.cta}
-                  </a>
+                  </a> */}
                 </div>
               </RevealItem>
             );

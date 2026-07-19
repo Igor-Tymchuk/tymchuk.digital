@@ -39,7 +39,7 @@ type Dict = {
   work: {
     title: string;
     subtitle: string;
-    items: { title: string; cat: string }[];
+    items: { title: string; cat: string; link?: string }[];
   };
   process: {
     title: string;
@@ -86,6 +86,7 @@ type Dict = {
     rights: string;
     nav: string;
     contact: string;
+    address: string;
   };
 };
 
@@ -178,12 +179,32 @@ export const translations: Record<Lang, Dict> = {
       title: "Selected work",
       subtitle: "A glimpse of recent projects we are proud of.",
       items: [
-        { title: "Nova Fintech", cat: "Web App" },
-        { title: "Bloom Studio", cat: "Branding" },
-        { title: "Pulse Fitness", cat: "Landing Page" },
-        { title: "Aurora Gift", cat: "Surprise Site" },
-        { title: "Vertex Labs", cat: "Web App" },
-        { title: "Lumen Ads", cat: "Google Ads" },
+        {
+          title: "Our Love Story",
+          cat: "Surprise Site",
+          link: "https://love.tymchuk-digital.com/",
+        },
+        {
+          title: "Beauty Studio",
+          cat: "Landing Page",
+          link: "https://beauty.tymchuk-digital.com/",
+        },
+        {
+          title: "Landing Page",
+          cat: "Landing Page",
+          link: "https://portfolio.tymchuk-digital.com/",
+        },
+        {
+          title: "Lega Office",
+          cat: "Landing Page",
+          link: "https://lega-office.tymchuk-digital.com",
+        },
+        // { title: "Nova Fintech", cat: "Web App" },
+        // { title: "Bloom Studio", cat: "Branding" },
+        // { title: "Pulse Fitness", cat: "Landing Page" },
+        // { title: "Aurora Gift", cat: "Surprise Site" },
+        // { title: "Vertex Labs", cat: "Web App" },
+        // { title: "Lumen Ads", cat: "Google Ads" },
       ],
     },
     process: {
@@ -329,6 +350,7 @@ export const translations: Record<Lang, Dict> = {
       rights: "All rights reserved.",
       nav: "Navigation",
       contact: "Contact",
+      address: "59-300 Lubin, Poland",
     },
   },
   ua: {
@@ -344,12 +366,7 @@ export const translations: Record<Lang, Dict> = {
     hero: {
       badge: "Діджитал-агенція · Відкриті до нових проєктів",
       titleA: "Ми створюємо цифрові продукти, що",
-      rotating: [
-        "конвертують.",
-        "надихають.",
-        "масштабуються.",
-        "вирізняються.",
-      ],
+      rotating: ["конвертують.", "надихають.", "ростуть.", "вирізняються."],
       titleB: "",
       subtitle:
         "Лендінги, вебзастосунки, брендинг та маркетинг — зроблено з увагою до деталей і швидкістю.",
@@ -424,12 +441,28 @@ export const translations: Record<Lang, Dict> = {
       title: "Обрані роботи",
       subtitle: "Кілька проєктів, якими ми пишаємось.",
       items: [
-        { title: "Nova Fintech", cat: "Вебзастосунок" },
-        { title: "Bloom Studio", cat: "Брендинг" },
-        { title: "Pulse Fitness", cat: "Лендінг" },
-        { title: "Aurora Gift", cat: "Сайт-сюрприз" },
-        { title: "Vertex Labs", cat: "Вебзастосунок" },
-        { title: "Lumen Ads", cat: "Google Ads" },
+        {
+          title: "Our Love Story",
+          cat: "Сайт-сюрприз",
+          link: "https://love.tymchuk-digital.com/",
+        },
+        {
+          title: "Beauty Studio",
+          cat: "Лендінг",
+          link: "https://beauty.tymchuk-digital.com/",
+        },
+        {
+          title: "Portolio",
+          cat: "Лендінг",
+          link: "https://portfolio.tymchuk-digital.com/",
+        },
+        {
+          title: "Lega Office",
+          cat: "Лендінг",
+          link: "https://lega-office.tymchuk-digital.com",
+        },
+        // { title: "Vertex Labs", cat: "Вебзастосунок" },
+        // { title: "Lumen Ads", cat: "Google Ads" },
       ],
     },
     process: {
@@ -523,7 +556,7 @@ export const translations: Record<Lang, Dict> = {
       items: [
         {
           q: "Скільки триває проєкт?",
-          a: "Лендінги зазвичай 5–7 днів. Більші застосунки та брендинг — від 2 до 6 тижнів залежно від обсягу.",
+          a: "Лендінги зазвичай 5-7 днів. Більші застосунки та брендинг — від 2 до 6 тижнів залежно від обсягу.",
         },
         {
           q: "Чи працюєте з клієнтами з-за кордону?",
@@ -571,6 +604,7 @@ export const translations: Record<Lang, Dict> = {
       rights: "Усі права захищені.",
       nav: "Навігація",
       contact: "Контакти",
+      address: "59-300 Любін, Польща",
     },
   },
   pl: {
@@ -663,12 +697,32 @@ export const translations: Record<Lang, Dict> = {
       title: "Wybrane realizacje",
       subtitle: "Kilka projektów, z których jesteśmy dumni.",
       items: [
-        { title: "Nova Fintech", cat: "Aplikacja web" },
-        { title: "Bloom Studio", cat: "Branding" },
-        { title: "Pulse Fitness", cat: "Landing Page" },
-        { title: "Aurora Gift", cat: "Strona-niespodzianka" },
-        { title: "Vertex Labs", cat: "Aplikacja web" },
-        { title: "Lumen Ads", cat: "Google Ads" },
+        {
+          title: "Our Love Story",
+          cat: "Strona-niespodzianka",
+          link: "https://love.tymchuk-digital.com/",
+        },
+        {
+          title: "Beauty Studio",
+          cat: "Landing Page",
+          link: "https://beauty.tymchuk-digital.com/",
+        },
+        {
+          title: "Landing Page",
+          cat: "Landing Page",
+          link: "https://portfolio.tymchuk-digital.com/",
+        },
+        {
+          title: "Lega Office",
+          cat: "Landing Page",
+          link: "https://lega-office.tymchuk-digital.com",
+        },
+        // { title: "Nova Fintech", cat: "Aplikacja web" },
+        // { title: "Bloom Studio", cat: "Branding" },
+        // { title: "Pulse Fitness", cat: "Landing Page" },
+        // { title: "Aurora Gift", cat: "Strona-niespodzianka" },
+        // { title: "Vertex Labs", cat: "Aplikacja web" },
+        // { title: "Lumen Ads", cat: "Google Ads" },
       ],
     },
     process: {
@@ -810,6 +864,7 @@ export const translations: Record<Lang, Dict> = {
       rights: "Wszelkie prawa zastrzeżone.",
       nav: "Nawigacja",
       contact: "Kontakt",
+      address: "59-300 Lubin, Polska",
     },
   },
 };

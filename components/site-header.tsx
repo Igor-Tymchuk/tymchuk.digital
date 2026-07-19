@@ -18,7 +18,7 @@ export function SiteHeader() {
     { href: "#work", label: t.nav.work },
     { href: "#process", label: t.nav.process },
     { href: "#pricing", label: t.nav.pricing },
-    { href: "#reviews", label: t.nav.reviews },
+    // { href: "#reviews", label: t.nav.reviews },
     { href: "#contact", label: t.nav.contact },
   ];
 
